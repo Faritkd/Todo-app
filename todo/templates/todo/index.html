@@ -12,15 +12,16 @@
 <!--style-->
 <style>
 .card {
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),
+box-shadow: 0 4px 8px 0 rgb(16, 58, 115),
 			0 6px 20px 0 rgba(0,0,0,0.39);
-background: lightslategray;
+background: #555e69;
 margin-bottom : 5%;
 border-radius: 25px;
 padding : 2%;
 {#overflow: auto;#}
 resize: both;
 text-overflow: ellipsis;
+color: #000000;
 }
 .card:hover{
 	background: lightblue;
@@ -29,10 +30,19 @@ text-overflow: ellipsis;
 .submit_form{
 	text-align: center;
 	padding: 3%;
-	background: lightslategray;
+	background: #7d8796;
 	border-radius: 25px;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4),
+	box-shadow: 0 4px 8px 0 rgb(16, 58, 115),
 				0 6px 20px 0 rgba(0,0,0,0.36);
+}
+
+h1{
+    color: rgba(27, 50, 115, 0.88);
+    text-shadow: 2px 2px 2px #106f74;
+}
+
+b {
+    color: #000000;
 }
 </style>
 
@@ -49,7 +59,7 @@ text-overflow: ellipsis;
 {% endif %}
 
 <center class="row">
-	<h1><i>__TODO LIST__</i></h1>
+	<h1><i>Todo list</i></h1>
 	<hr />
 </center>
 
