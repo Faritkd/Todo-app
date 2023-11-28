@@ -1,10 +1,13 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
-
 from user.models import User
 
 
 class RegisterForm(forms.ModelForm):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['name', 'username', 'email', 'password']
+
+
+class LoginForm(forms.Form):
+    email = forms.EmailField()
+    password = forms.CharField(widget=forms.PasswordInput)
